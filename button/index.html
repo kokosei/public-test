@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>早押しボタン</title>
+  <script src="https://cdn.socket.io/socket.io-3.1.3.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>早押しボタン</h1>
+  <button id="join-room">部屋に参加する</button>
+  <div id="room-container" style="display: none;">
+    <h2 id="room-id">部屋ID: </h2>
+    <h3>プレイヤー一覧:</h3>
+    <ul id="player-list"></ul>
+    <button id="press-button" disabled>ボタンを押す</button>
+    <button id="pass-button" disabled>パス</button>
+    <button id="out-button" disabled>アウト</button>
+    <div id="message-container"></div>
+  </div>
+</body>
+</html>
